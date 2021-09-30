@@ -43,6 +43,10 @@ namespace Examen.Forms
         {
             cmbTipoActivo.Items.AddRange(Enum.GetValues(typeof(TipoActivo)).Cast<Object>().ToArray());
         }
-    
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }
