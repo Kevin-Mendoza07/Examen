@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,5 +13,6 @@ namespace Domain.Entities
         public string Descripcion { get; set; }
         public decimal ValorActivo { get; set; }
         public DateTime FechaAdquisicion { get; set;}
+        public TipoActivo TipoActivo { get; set; }
     }
 }

@@ -33,13 +33,13 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblValor = new System.Windows.Forms.Label();
+            this.lblAdquisicion = new System.Windows.Forms.Label();
+            this.lblTipoActivo = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.nudValor = new System.Windows.Forms.NumericUpDown();
-            this.lblAdquisicion = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblTipoActivo = new System.Windows.Forms.Label();
+            this.dtpAdquisicion = new System.Windows.Forms.DateTimePicker();
             this.cmbTipoActivo = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -50,37 +50,37 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cmbTipoActivo);
-            this.groupBox1.Controls.Add(this.lblTipoActivo);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.lblAdquisicion);
+            this.groupBox1.Controls.Add(this.dtpAdquisicion);
             this.groupBox1.Controls.Add(this.nudValor);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtDescripcion);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.txtCodigo);
+            this.groupBox1.Controls.Add(this.lblTipoActivo);
+            this.groupBox1.Controls.Add(this.lblAdquisicion);
             this.groupBox1.Controls.Add(this.lblValor);
             this.groupBox1.Controls.Add(this.lblDescripcion);
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Controls.Add(this.lblCodigo);
-            this.groupBox1.Location = new System.Drawing.Point(31, 38);
+            this.groupBox1.Location = new System.Drawing.Point(22, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 391);
+            this.groupBox1.Size = new System.Drawing.Size(598, 354);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ingrese Datos del Activo";
+            this.groupBox1.Text = "Ingresar datos del activo fijo";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(38, 48);
+            this.lblCodigo.Location = new System.Drawing.Point(39, 45);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(46, 13);
+            this.lblCodigo.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Codigo: ";
+            this.lblCodigo.Text = "Codigo:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(38, 96);
+            this.lblNombre.Location = new System.Drawing.Point(38, 91);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(50, 13);
             this.lblNombre.TabIndex = 1;
@@ -89,7 +89,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(38, 155);
+            this.lblDescripcion.Location = new System.Drawing.Point(38, 136);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(69, 13);
             this.lblDescripcion.TabIndex = 2;
@@ -98,88 +98,88 @@
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(38, 239);
+            this.lblValor.Location = new System.Drawing.Point(39, 213);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(37, 13);
             this.lblValor.TabIndex = 3;
             this.lblValor.Text = "Valor: ";
             // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(133, 48);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(286, 20);
-            this.txtCodigo.TabIndex = 4;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(133, 93);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(286, 20);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(133, 139);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(286, 76);
-            this.textBox3.TabIndex = 6;
-            // 
-            // nudValor
-            // 
-            this.nudValor.Location = new System.Drawing.Point(133, 237);
-            this.nudValor.Name = "nudValor";
-            this.nudValor.Size = new System.Drawing.Size(286, 20);
-            this.nudValor.TabIndex = 7;
-            // 
             // lblAdquisicion
             // 
             this.lblAdquisicion.AutoSize = true;
-            this.lblAdquisicion.Location = new System.Drawing.Point(18, 276);
+            this.lblAdquisicion.Location = new System.Drawing.Point(25, 260);
             this.lblAdquisicion.Name = "lblAdquisicion";
             this.lblAdquisicion.Size = new System.Drawing.Size(100, 13);
-            this.lblAdquisicion.TabIndex = 8;
+            this.lblAdquisicion.TabIndex = 4;
             this.lblAdquisicion.Text = "Fecha Adquisicion: ";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(133, 270);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(286, 20);
-            this.dateTimePicker1.TabIndex = 9;
             // 
             // lblTipoActivo
             // 
             this.lblTipoActivo.AutoSize = true;
-            this.lblTipoActivo.Location = new System.Drawing.Point(21, 330);
+            this.lblTipoActivo.Location = new System.Drawing.Point(25, 307);
             this.lblTipoActivo.Name = "lblTipoActivo";
-            this.lblTipoActivo.Size = new System.Drawing.Size(67, 13);
-            this.lblTipoActivo.TabIndex = 10;
-            this.lblTipoActivo.Text = "Tipo Activo: ";
+            this.lblTipoActivo.Size = new System.Drawing.Size(82, 13);
+            this.lblTipoActivo.TabIndex = 5;
+            this.lblTipoActivo.Text = "Tipo de Activo: ";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(161, 42);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(290, 20);
+            this.txtCodigo.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(161, 88);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(290, 20);
+            this.txtNombre.TabIndex = 7;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(161, 114);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(290, 72);
+            this.txtDescripcion.TabIndex = 8;
+            // 
+            // nudValor
+            // 
+            this.nudValor.Location = new System.Drawing.Point(161, 211);
+            this.nudValor.Name = "nudValor";
+            this.nudValor.Size = new System.Drawing.Size(290, 20);
+            this.nudValor.TabIndex = 9;
+            // 
+            // dtpAdquisicion
+            // 
+            this.dtpAdquisicion.Location = new System.Drawing.Point(161, 254);
+            this.dtpAdquisicion.Name = "dtpAdquisicion";
+            this.dtpAdquisicion.Size = new System.Drawing.Size(290, 20);
+            this.dtpAdquisicion.TabIndex = 10;
             // 
             // cmbTipoActivo
             // 
             this.cmbTipoActivo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoActivo.FormattingEnabled = true;
-            this.cmbTipoActivo.Location = new System.Drawing.Point(133, 327);
+            this.cmbTipoActivo.Location = new System.Drawing.Point(161, 304);
             this.cmbTipoActivo.Name = "cmbTipoActivo";
-            this.cmbTipoActivo.Size = new System.Drawing.Size(286, 21);
+            this.cmbTipoActivo.Size = new System.Drawing.Size(290, 21);
             this.cmbTipoActivo.TabIndex = 11;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(352, 458);
+            this.btnAceptar.Location = new System.Drawing.Point(413, 403);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 1;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
+            this.btnAceptar.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(470, 458);
+            this.btnCancelar.Location = new System.Drawing.Point(524, 403);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 2;
@@ -190,12 +190,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 512);
+            this.ClientSize = new System.Drawing.Size(642, 449);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmActivoFijo";
             this.Text = "FrmActivoFijo";
+            this.Load += new System.EventHandler(this.FrmActivoFijo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudValor)).EndInit();
@@ -207,13 +208,13 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbTipoActivo;
-        private System.Windows.Forms.Label lblTipoActivo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label lblAdquisicion;
+        private System.Windows.Forms.DateTimePicker dtpAdquisicion;
         private System.Windows.Forms.NumericUpDown nudValor;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.Label lblTipoActivo;
+        private System.Windows.Forms.Label lblAdquisicion;
         private System.Windows.Forms.Label lblValor;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblNombre;
