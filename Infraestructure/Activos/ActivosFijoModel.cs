@@ -24,7 +24,7 @@ namespace Infraestructure.Activos
 
             if (activosFijos == null)
             {
-                throw new ArgumentException("");
+               throw new ArgumentException("") ;
             }
             foreach(ActivosFijo ac in activosFijos)
             {

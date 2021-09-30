@@ -23,12 +23,18 @@ namespace Examen.Forms
 
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
-            FrmActivoFijo frmActivoFijo = new FrmActivoFijo();
-            frmActivoFijo.AModel = activosFijoModels;
-            frmActivoFijo.ShowDialog();
+            try {
 
-            rtbActivoFijoView.Text = activosFijoModels.Imprimirtexto();
+                FrmActivoFijo frmActivoFijo = new FrmActivoFijo();
+                frmActivoFijo.AModel = activosFijoModels;
+                frmActivoFijo.ShowDialog();
 
-        }
+                rtbActivoFijoView.Text = activosFijoModels.Imprimirtexto();
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "");
+            }
+            }
     }
 }
