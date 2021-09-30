@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Domain.Entities
 {
-    class ActivosFijo
+    public class ActivosFijo
     {
+        public int Id { get; set; }
+        public string CodigoActivo { get; set; }
+        public string NombreActivo { get; set; }
+        public string Descripcion { get; set; }
+        public decimal ValorActivo { get; set; }
+        public DateTime FechaAdquisicion { get; set;}
     }
 }
